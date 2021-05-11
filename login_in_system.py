@@ -95,7 +95,8 @@ def menu_for_user(login):   # меню
     usage_text = int(input("""
 1. Change password
 2. Login Menu
-3. Exit from system
+3. Info
+4. Exit from system
 Please select: """))
     if usage_text == 1:
         password_change(login)
@@ -103,6 +104,8 @@ Please select: """))
     if usage_text == 2:
         login_in_system()
     if usage_text == 3:
+        print("Ivanchenkov M, FB-84, var-11 ")
+    if usage_text == 4:
         system_close()
     else:
         print("Wrong paragraph chosen, please enter another")
@@ -115,7 +118,8 @@ def menu_for_admin():
 1. User list
 2. Change password
 3. login
-4. Exit
+4. Info
+5. Exit
 Select: """))
     if usage_text == 1:
         user_list = []
@@ -161,6 +165,8 @@ Select:"""))
     if usage_text == 3:
         login_in_system()
     if usage_text == 4:
+        print("Ivanchenkov M, FB-84, var-11 ")
+    if usage_text == 5:
         system_close()
 
 
